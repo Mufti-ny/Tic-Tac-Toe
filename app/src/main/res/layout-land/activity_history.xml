@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:text="HISTORY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textFontWeight="600"
+        android:textSize="20dp"
+        android:textAppearance="?attr/textAppearanceHeadline6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/any"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Game"
+            android:textSize="20dp"
+            android:textFontWeight="700"
+            />
+
+        <TextView
+            android:id="@+id/any2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Winner"
+            android:textSize="20dp"
+            android:textFontWeight="700"/>
+
+        <TextView
+            android:id="@+id/any3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Piece"
+            android:textSize="20dp"
+            android:textFontWeight="700"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buttonClearHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear History"
+        android:onClick="clearHistory" />
+</LinearLayout>
